@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fred Kitchens | Personal Landing Page</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #5b6472;
+      --accent: #1f4b7a;
+      --border: #d9e2ec;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 36px 28px;
+      box-shadow: 0 6px 18px rgba(31, 41, 55, 0.06);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2.4rem;
+      color: var(--accent);
+    }
+
+    .headline {
+      margin: 0 0 14px;
+      font-size: 1.15rem;
+      color: var(--muted);
+      font-weight: bold;
+    }
+
+    .location {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(31, 41, 55, 0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+      color: var(--accent);
+      border-bottom: 2px solid #eef3f8;
+      padding-bottom: 8px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .full-width {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header class="hero">
+      <h1>Fred Kitchens</h1>
+      <p class="headline">Computer Information Systems | Ball State University</p>
+      <p class="location">Muncie, Indiana, United States</p>
+    </header>
+
+    <main class="grid">
+      <section class="card full-width">
+        <h2>About</h2>
+        <p>
+          Welcome to my personal landing page. I am affiliated with Computer Information Systems at Ball State University
+          and have an academic background connected to the University of Mississippi - School of Business Administration.
+        </p>
+        <p>
+          [Add a short professional bio here. You might describe your teaching, research, professional background,
+          current projects, or the kinds of students, colleagues, and organizations you enjoy working with.]
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Professional Focus</h2>
+        <ul>
+          <li>Computer Information Systems</li>
+          <li>Higher education and student development [review and refine]</li>
+          <li>[Add your core specialties here]</li>
+          <li>[Add industries, topics, or areas of expertise here]</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Ball State University</strong></li>
+          <li><strong>University of Mississippi - School of Business Administration</strong></li>
+          <li>[Add degree names, graduation years, honors, or certifications here if desired]</li>
+        </ul>
+      </section>
+
+      <section class="card full-width">
+        <h2>Experience</h2>
+        <p>
+          <strong>Ball State University</strong><br>
+          Computer Information Systems<br>
+          <span class="muted">[Add official title, department, dates, and a brief summary of responsibilities]</span>
+        </p>
+
+        <p>
+          <strong>[Previous Role or Organization]</strong><br>
+          <span class="muted">[Add previous experience from LinkedIn or your résumé if you want this page to be more complete]</span>
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Activities & Interests</h2>
+        <ul>
+          <li>[Add student organizations, advisory work, conferences, or service roles]</li>
+          <li>[Add professional associations or academic interests]</li>
+          <li>[Add personal interests if you want the page to feel more human and approachable]</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Goals</h2>
+        <ul>
+          <li>[Share a professional mission or teaching philosophy]</li>
+          <li>[Mention collaboration goals, research goals, or student-impact goals]</li>
+          <li>[Add a sentence about what opportunities you welcome]</li>
+        </ul>
+      </section>
+
+      <section class="card full-width">
+        <h2>Contact</h2>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/fred-kitchens/" target="_blank" rel="noopener">
+            linkedin.com/in/fred-kitchens
+          </a>
+        </p>
+        <p>[Add email address, professional website, or other preferred contact information here]</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Fred Kitchens. All rights reserved.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
